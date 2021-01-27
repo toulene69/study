@@ -44,7 +44,7 @@
 		AEFE1791256AA3F90054C2E6 = {
 			isa = PBXGroup;
 			children = (
-				AEFE179C256AA3F90054C2E6 /* Sample */,
+				AEFE179C256AA3F90054C2E6 /* BST */,
 				AEFE179B256AA3F90054C2E6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,14 +57,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AEFE179C256AA3F90054C2E6 /* Sample */ = {
+		AEFE179C256AA3F90054C2E6 /* BST */ = {
 			isa = PBXGroup;
 			children = (
 				AEFE179D256AA3F90054C2E6 /* main.cpp */,
 				AEFE17A5256AA8430054C2E6 /* BST.cpp */,
 				AEFE17A6256AA8430054C2E6 /* BST.hpp */,
 			);
-			path = Sample;
+			path = BST;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
