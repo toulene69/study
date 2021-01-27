@@ -24,7 +24,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		AEFE179A256AA3F90054C2E6 /* Sample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Sample; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEFE179A256AA3F90054C2E6 /* BST */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BST; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEFE179D256AA3F90054C2E6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		AEFE17A5256AA8430054C2E6 /* BST.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BST.cpp; sourceTree = "<group>"; };
 		AEFE17A6256AA8430054C2E6 /* BST.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BST.hpp; sourceTree = "<group>"; };
@@ -52,7 +52,7 @@
 		AEFE179B256AA3F90054C2E6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AEFE179A256AA3F90054C2E6 /* Sample */,
+				AEFE179A256AA3F90054C2E6 /* BST */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,9 +70,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AEFE1799256AA3F90054C2E6 /* Sample */ = {
+		AEFE1799256AA3F90054C2E6 /* BST */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AEFE17A1256AA3F90054C2E6 /* Build configuration list for PBXNativeTarget "Sample" */;
+			buildConfigurationList = AEFE17A1256AA3F90054C2E6 /* Build configuration list for PBXNativeTarget "BST" */;
 			buildPhases = (
 				AEFE1796256AA3F90054C2E6 /* Sources */,
 				AEFE1797256AA3F90054C2E6 /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = Sample;
+			name = BST;
 			productName = Sample;
-			productReference = AEFE179A256AA3F90054C2E6 /* Sample */;
+			productReference = AEFE179A256AA3F90054C2E6 /* BST */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -100,7 +100,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AEFE1795256AA3F90054C2E6 /* Build configuration list for PBXProject "Sample" */;
+			buildConfigurationList = AEFE1795256AA3F90054C2E6 /* Build configuration list for PBXProject "BST" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,7 +113,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AEFE1799256AA3F90054C2E6 /* Sample */,
+				AEFE1799256AA3F90054C2E6 /* BST */,
 			);
 		};
 /* End PBXProject section */
@@ -261,7 +261,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AEFE1795256AA3F90054C2E6 /* Build configuration list for PBXProject "Sample" */ = {
+		AEFE1795256AA3F90054C2E6 /* Build configuration list for PBXProject "BST" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AEFE179F256AA3F90054C2E6 /* Debug */,
@@ -270,7 +270,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AEFE17A1256AA3F90054C2E6 /* Build configuration list for PBXNativeTarget "Sample" */ = {
+		AEFE17A1256AA3F90054C2E6 /* Build configuration list for PBXNativeTarget "BST" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AEFE17A2256AA3F90054C2E6 /* Debug */,
