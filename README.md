@@ -1,2 +1,2 @@
 # study
-For the study class code collaboration
+For study class code collaboration
