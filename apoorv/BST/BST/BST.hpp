@@ -12,6 +12,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <iostream>
+#include <stack>
 
 using namespace std;
 
@@ -35,6 +36,8 @@ public:
     BST();
     bool contains(int key);
     void insert(int key);
+    int lowestCommonAncestor(int a, int b);
+    int successor(int a);
 };
 
 

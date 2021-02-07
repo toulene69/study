@@ -44,10 +44,20 @@ int main(int argc, const char * argv[]) {
     obj.insert(30);
     obj.insert(-10);
     obj.insert(10);
+    obj.insert(15);
     obj.insert(50);
+    obj.insert(25);
     
+    //cout<< obj.lowestCommonAncestor(50, 10) << endl;
     
-    cout<< obj.contains(-10);
+    //cout<< obj.successor(-10) << endl;
+    int c = -10;
+    while (c != -1000009) {
+        c =obj.successor(c);
+        cout << c << endl;
+    }
+    
+    //cout<< obj.contains(-10);
     
     
     return 0;

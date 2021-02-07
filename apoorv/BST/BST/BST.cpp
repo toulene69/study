@@ -80,3 +80,75 @@ void BST::insert(int key) {
     }
     
 }
+
+Node* lcaHelper(Node* root, int a, int b) {
+    if (root == NULL) {
+        return NULL;
+    }
+    if (root->val == a || root->val == b) {
+        return root;
+    } else if (root->val > a && root->val < b ) {
+        return root;
+    } else if (root->val > a && root->val > b) {
+        return lcaHelper(root->lChild, a, b);
+    } else {
+        return lcaHelper(root->rChild, a, b);
+    }
+}
+
+int BST::lowestCommonAncestor(int a, int b) {
+    
+    if (a > b) {
+        swap(a, b);
+    }
+    if(this->contains(a) && this->contains(b)) {
+        Node *lca = lcaHelper(this->root, a, b);
+        if (lca != NULL) {
+            return lca->val;
+        }
+    }
+    return -10000009;
+}
+
+int BST::successor(int a) {
+    stack<Node*> path;
+    Node *current = this->root;
+    // find a
+    // store the path
+    // if a has right subtree -> find the smallest in right subtree of a
+    // else trace back the path and find first right turn
+    while (current != nullptr) {
+        if (current->val == a) {
+            break;
+        } else if (current->val > a) {
+            path.push(current);
+            current = current->lChild;
+        } else {
+            path.push(current);
+            current = current->rChild;
+        }
+    }
+    if (current == NULL) {
+        return -1000009;
+    }
+    if (current ->rChild != NULL) {
+        current = current->rChild;
+        while (current->lChild != nullptr) {
+            current = current->lChild;
+        }
+        return current->val;
+    } else {
+    
+        while (!path.empty()) {
+            Node *parent = path.top();
+            
+            if (parent->lChild == current) {
+                return parent->val;
+            } else {
+                current = parent;
+                path.pop();
+            }
+        }
+        return -1000009;
+    }
+}
