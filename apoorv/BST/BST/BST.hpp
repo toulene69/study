@@ -29,15 +29,18 @@ struct Node {
 class BST {
     
 private:
-    Node *root;
+    
     Node* containsHelper(Node *node, int key);
     Node* getNewNode(int key);
 public:
+    Node *root;
     BST();
     bool contains(int key);
     void insert(int key);
     int lowestCommonAncestor(int a, int b);
     int successor(int a);
+    int height(Node *root);
+    bool isBST(Node * root);
 };
 
 

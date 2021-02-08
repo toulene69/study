@@ -152,3 +152,22 @@ int BST::successor(int a) {
         return -1000009;
     }
 }
+
+int BST::height(Node *root) {
+    if (root == nullptr) {
+        return 0;
+    }
+    
+    return max(this->height(root->lChild), this->height(root->rChild)) + 1;
+}
+
+bool BST::isBST(Node * root) {
+    if (root == nullptr) {
+        return true;
+    }
+    if (root->lChild-> val < root->val && root->rChild->val > root->val) {
+        return isBST(root->lChild) && isBST(root->rChild);
+    } else {
+        return false;
+    }
+}

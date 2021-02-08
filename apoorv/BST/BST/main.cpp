@@ -48,14 +48,16 @@ int main(int argc, const char * argv[]) {
     obj.insert(50);
     obj.insert(25);
     
+    cout << obj.height(obj.root) << endl;
+    
     //cout<< obj.lowestCommonAncestor(50, 10) << endl;
     
     //cout<< obj.successor(-10) << endl;
-    int c = -10;
-    while (c != -1000009) {
-        c =obj.successor(c);
-        cout << c << endl;
-    }
+//    int c = -10;
+//    while (c != -1000009) {
+//        c =obj.successor(c);
+//        cout << c << endl;
+//    }
     
     //cout<< obj.contains(-10);
     
