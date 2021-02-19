@@ -1,0 +1,85 @@
+import java.util.*;
+class BinarySearchTree {
+    class Node 
+    {
+        int key;
+        Node left, right;
+        public Node(int item)
+        {
+            key = item;
+            left = right = null;
+        }
+    }
+    Node root;
+    BinarySearchTree() 
+    { 
+         root = null; 
+    }
+    void insert(int key) 
+    { 
+         root = insert(root, key); 
+    }
+    void inorder() 
+    { 
+        inorder(root); 
+    }
+    void preorder() 
+    { 
+        preorder(root); 
+    }
+    void postorder() 
+    { 
+         postorder(root); 
+    }
+    Node insert(Node root, int key)
+    {
+        if (root == null) 
+        {
+            root = new Node(key);
+            return root;
+        }
+        if (key < root.key)
+            root.left = insert(root.left, key);
+        else if (key > root.key)
+            root.right = insert(root.right, key);
+        return root;
+    }
+    void inorder(Node root)
+    {
+        if (root != null) {
+            inorder(root.left);
+            System.out.println(root.key);
+            inorder(root.right);
+        }
+    }
+    void preorder(Node root)
+    {
+        if (root != null) {
+            System.out.println(root.key);
+            preorder(root.left);
+            preorder(root.right);
+        }
+    }
+    void postorder(Node root)
+    {
+        if (root != null) {
+            postorder(root.left);
+            postorder(root.right);
+            System.out.println(root.key);
+        }
+    }
+    public static void main(String[] args)
+    {
+        BinarySearchTree tree = new BinarySearchTree();
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter the no. of Elenments : ");
+        int n = in.nextInt();
+        for(int i =0; i<n ;i++)
+        {
+            tree.insert(in.nextInt());
+        }
+        tree.inorder();
+        tree.preorder();
+        tree.postorder();
+    }
+}
